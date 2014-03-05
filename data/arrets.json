@@ -1,0 +1,850 @@
+﻿{
+    "lignes": [
+        {
+            "ligne": "A",
+            "from": "Aéroport",
+            "to": "Hôpital",
+            "arrets": [
+                {
+                    "arret": "Aéroport",
+                    "lat": -3.47071,
+                    "lon": 48.75791
+                },
+                {
+                    "arret": "Emeraude ID",
+                    "lat": -3.46716,
+                    "lon": 48.75864
+                },
+                {
+                    "arret": "Alcatel",
+                    "lat": -3.46329,
+                    "lon": 48.75788
+                },
+                {
+                    "arret": "Espace De Broglie",
+                    "lat": -3.45948,
+                    "lon": 48.75764
+                },
+                {
+                    "arret": "IUT",
+                    "lat": -3.45491,
+                    "lon": 48.75812
+                },
+                {
+                    "arret": "Leclerc",
+                    "lat": -3.45875,
+                    "lon": 48.75242
+                },
+                {
+                    "arret": "Géant",
+                    "lat": -3.46151,
+                    "lon": 48.74754
+                },
+                {
+                    "arret": "Rond-point d'Armor",
+                    "lat": -3.46314,
+                    "lon": 48.74673
+                },
+                {
+                    "arret": "Woas Wen",
+                    "lat": -3.46751,
+                    "lon": 48.7464
+                },
+                {
+                    "arret": "Saint-Yves",
+                    "lat": -3.47167,
+                    "lon": 48.74451
+                },
+                {
+                    "arret": "Saint-Roch",
+                    "lat": -3.47004,
+                    "lon": 48.74179
+                },
+                {
+                    "arret": "Louardoul",
+                    "lat": -3.46825,
+                    "lon": 48.73684
+                },
+                {
+                    "arret": "Sainte-Anne Médiathèque",
+                    "lat": -3.46135,
+                    "lon": 48.7308
+                },
+                {
+                    "arret": "Gare Clémenceau",
+                    "lat": -3.45978,
+                    "lon": 48.7283
+                },
+                {
+                    "arret": "Kéranroux",
+                    "lat": -3.46043,
+                    "lon": 48.7314
+                },
+                {
+                    "arret": "Ty Bras",
+                    "lat": -3.46043,
+                    "lon": 48.72984
+                },
+                {
+                    "arret": "Ploubezre La Poste",
+                    "lat": -3.45959,
+                    "lon": 48.72837
+                },
+                {
+                    "arret": "Kergomar",
+                    "lat": -3.46289,
+                    "lon": 48.72447
+                },
+                {
+                    "arret": "Hôpital",
+                    "lat": -3.46556,
+                    "lon": 48.72308
+                }
+            ]
+        },
+        {
+            "ligne": "A",
+            "from": "Hôpital",
+            "to": "Aéroport",
+            "arrets": [
+                {
+                    "arret": "Hôpital",
+                    "lat": -3.46556,
+                    "lon": 48.72308
+                },
+                {
+                    "arret": "Kergomar",
+                    "lat": -3.46263,
+                    "lon": 48.72456
+                },
+                {
+                    "arret": "Ploubezre La Poste",
+                    "lat": -3.45959,
+                    "lon": 48.72837
+                },
+                {
+                    "arret": "Ty Bras",
+                    "lat": -3.46043,
+                    "lon": 48.72984
+                },
+                {
+                    "arret": "Kéranroux",
+                    "lat": -3.46043,
+                    "lon": 48.7314
+                },
+                {
+                    "arret": "Gare Clémenceau",
+                    "lat": -3.46304,
+                    "lon": 48.73256
+                },
+                {
+                    "arret": "Quai d'Aiguillon",
+                    "lat": -3.46544,
+                    "lon": 48.73209
+                },
+                {
+                    "arret": "Quai de Viarmes",
+                    "lat": -3.468,
+                    "lon": 48.7368
+                },
+                {
+                    "arret": "Louardoul",
+                    "lat": -3.46996,
+                    "lon": 48.742
+                },
+                {
+                    "arret": "St-Roch",
+                    "lat": -3.4714,
+                    "lon": 48.74452
+                },
+                {
+                    "arret": "St-Yves",
+                    "lat": -3.46744,
+                    "lon": 48.74631
+                },
+                {
+                    "arret": "Woas Wen",
+                    "lat": -3.46293,
+                    "lon": 48.74664
+                },
+                {
+                    "arret": "Rond-point d'Armor",
+                    "lat": -3.46089,
+                    "lon": 48.74856
+                },
+                {
+                    "arret": "Géant",
+                    "lat": -3.46048,
+                    "lon": 48.74972
+                },
+                {
+                    "arret": "Leclerc",
+                    "lat": -3.45827,
+                    "lon": 48.75255
+                },
+                {
+                    "arret": "IUT",
+                    "lat": -3.45409,
+                    "lon": 48.7577
+                },
+                {
+                    "arret": "Espace De Broglie",
+                    "lat": -3.45946,
+                    "lon": 48.75772
+                },
+                {
+                    "arret": "Alcatel",
+                    "lat": -3.46385,
+                    "lon": 48.75807
+                },
+                {
+                    "arret": "Emeraude ID",
+                    "lat": -3.46707,
+                    "lon": 48.7587
+                },
+                {
+                    "arret": "Aéroport",
+                    "lat": -3.47071,
+                    "lon": 48.75791
+                }
+            ]
+        },
+        {
+            "ligne": "B",
+            "from": "Servel Calvaire",
+            "to": "Collège Coppens",
+            "arrets": [
+                {
+                    "arret": "Servel Calvaire",
+                    "lat": -3.48949,
+                    "lon": 48.74588
+                },
+                {
+                    "arret": "Servel Bourg",
+                    "lat": -3.48615,
+                    "lon": 48.74851
+                },
+                {
+                    "arret": "Carrefour de Servel",
+                    "lat": -3.47932,
+                    "lon": 48.74619
+                },
+                {
+                    "arret": "Le Roudour",
+                    "lat": -3.4937,
+                    "lon": 48.74572
+                },
+                {
+                    "arret": "Paul Claudel",
+                    "lat": -3.47978,
+                    "lon": 48.74307
+                },
+                {
+                    "arret": "Intermarché Kerligonan",
+                    "lat": -3.47608,
+                    "lon": 48.74446
+                },
+                {
+                    "arret": "Colibri",
+                    "lat": -3.47358,
+                    "lon": 48.74298
+                },
+                {
+                    "arret": "St-Yves",
+                    "lat": -3.4714,
+                    "lon": 48.74452
+                },
+                {
+                    "arret": "Woas Wen",
+                    "lat": -3.46744,
+                    "lon": 48.74631
+                },
+                {
+                    "arret": "Rond-point d'Armor",
+                    "lat": -3.46293,
+                    "lon": 48.74664
+                },
+                {
+                    "arret": "Kroaz Hent",
+                    "lat": -3.46384,
+                    "lon": 48.73908
+                },
+                {
+                    "arret": "Abattoir",
+                    "lat": -3.46603,
+                    "lon": 48.73471
+                },
+                {
+                    "arret": "Quai de Viarmes",
+                    "lat": -3.46304,
+                    "lon": 48.73256
+                },
+                {
+                    "arret": "Ste-Anne Médiathèque",
+                    "lat": -3.46135,
+                    "lon": 48.7308
+                },
+                {
+                    "arret": "Kermaria",
+                    "lat": -3.45703,
+                    "lon": 48.72829
+                },
+                {
+                    "arret": "Bienfaisance",
+                    "lat": -3.45492,
+                    "lon": 48.72892
+                },
+                {
+                    "arret": "St-Nicolas",
+                    "lat": -3.4509,
+                    "lon": 48.72896
+                },
+                {
+                    "arret": "Ar Santé Les Fontaines",
+                    "lat": -3.44707,
+                    "lon": 48.72745
+                },
+                {
+                    "arret": "Park Névez",
+                    "lat": -3.44488,
+                    "lon": 48.7299
+                },
+                {
+                    "arret": "Maison des Sports",
+                    "lat": -3.44159,
+                    "lon": 48.73084
+                },
+                {
+                    "arret": "Intermarché St-Marc",
+                    "lat": -3.4391,
+                    "lon": 48.73432
+                },
+                {
+                    "arret": "Collège Coppens",
+                    "lat": -3.43371,
+                    "lon": 48.73442
+                }
+            ]
+        },
+        {
+            "ligne": "B",
+            "from": "Collège Coppens",
+            "to": "Servel Calvaire",
+            "arrets": [
+                {
+                    "arret": "Collège Coppens",
+                    "lat": -3.43371,
+                    "lon": 48.73442
+                },
+                {
+                    "arret": "Intermarché St-Marc",
+                    "lat": -3.43935,
+                    "lon": 48.73439
+                },
+                {
+                    "arret": "Maison des Sports",
+                    "lat": -3.44172,
+                    "lon": 48.73093
+                },
+                {
+                    "arret": "Park Névez",
+                    "lat": -3.44535,
+                    "lon": 48.73006
+                },
+                {
+                    "arret": "Ar Santé Les Fontaines",
+                    "lat": -3.44707,
+                    "lon": 48.72745
+                },
+                {
+                    "arret": "St-Nicolas",
+                    "lat": -3.45121,
+                    "lon": 48.72922
+                },
+                {
+                    "arret": "Bienfaisance",
+                    "lat": -3.45414,
+                    "lon": 48.72914
+                },
+                {
+                    "arret": "Kermaria",
+                    "lat": -3.45711,
+                    "lon": 48.72832
+                },
+                {
+                    "arret": "Quai d'Aiguillon",
+                    "lat": -3.46043,
+                    "lon": 48.7314
+                },
+                {
+                    "arret": "Abattoir",
+                    "lat": -3.46588,
+                    "lon": 48.7347
+                },
+                {
+                    "arret": "Kroaz Hent",
+                    "lat": -3.46342,
+                    "lon": 48.73907
+                },
+                {
+                    "arret": "Rond-point d'Armor",
+                    "lat": -3.46314,
+                    "lon": 48.74673
+                },
+                {
+                    "arret": "Woas Wen",
+                    "lat": -3.46751,
+                    "lon": 48.7464
+                },
+                {
+                    "arret": "St-Yves",
+                    "lat": -3.47167,
+                    "lon": 48.74451
+                },
+                {
+                    "arret": "Colibri",
+                    "lat": -3.47348,
+                    "lon": 48.74303
+                },
+                {
+                    "arret": "Intermarché Kerligonan",
+                    "lat": -3.47608,
+                    "lon": 48.74455
+                },
+                {
+                    "arret": "Paul Claudel",
+                    "lat": -3.47978,
+                    "lon": 48.74307
+                },
+                {
+                    "arret": "Le Roudour",
+                    "lat": -3.47941,
+                    "lon": 48.74632
+                },
+                {
+                    "arret": "Carrefour de Servel",
+                    "lat": -3.4873,
+                    "lon": 48.74839
+                },
+                {
+                    "arret": "Servel Bourg",
+                    "lat": -3.48981,
+                    "lon": 48.74596
+                },
+                {
+                    "arret": "Servel Calvaire",
+                    "lat": -3.4937,
+                    "lon": 48.74572
+                }
+            ]
+        },
+        {
+            "ligne": "C",
+            "from": "Alcatel",
+            "to": "Kérilis",
+            "arrets": [
+                {
+                    "arret": "Alcatel",
+                    "lat": -3.46329,
+                    "lon": 48.75788
+                },
+                {
+                    "arret": "Espace De Broglie",
+                    "lat": -3.45948,
+                    "lon": 48.75764
+                },
+                {
+                    "arret": "IUT",
+                    "lat": -3.45491,
+                    "lon": 48.75812
+                },
+                {
+                    "arret": "Leclerc St-Pierre",
+                    "lat": -3.45619,
+                    "lon": 48.75263
+                },
+                {
+                    "arret": "Rusquet Sud",
+                    "lat": -3.45232,
+                    "lon": 48.7516
+                },
+                {
+                    "arret": "Ecole du Rusquet",
+                    "lat": -3.44653,
+                    "lon": 48.75116
+                },
+                {
+                    "arret": "Côte du rest",
+                    "lat": -3.44886,
+                    "lon": 48.74807
+                },
+                {
+                    "arret": "Croix de St Ugeon",
+                    "lat": -3.45204,
+                    "lon": 48.74453
+                },
+                {
+                    "arret": "Troguéry",
+                    "lat": -3.44525,
+                    "lon": 48.74066
+                },
+                {
+                    "arret": "Pouldiguy Picasso",
+                    "lat": -3.44975,
+                    "lon": 48.73995
+                },
+                {
+                    "arret": "Pouldiguy Bouille",
+                    "lat": -3.44825,
+                    "lon": 48.73881
+                },
+                {
+                    "arret": "Rond-point St-Marc",
+                    "lat": -3.44429,
+                    "lon": 48.73488
+                },
+                {
+                    "arret": "Intermarché St-Marc",
+                    "lat": -3.4391,
+                    "lon": 48.73432
+                },
+                {
+                    "arret": "Collège Coppens",
+                    "lat": -3.43371,
+                    "lon": 48.73442
+                },
+                {
+                    "arret": "Intermarché St-Marc",
+                    "lat": -3.43935,
+                    "lon": 48.73439
+                },
+                {
+                    "arret": "Rue des Cordiers",
+                    "lat": -3.44461,
+                    "lon": 48.73168
+                },
+                {
+                    "arret": "Sécurité Sociale",
+                    "lat": -3.44674,
+                    "lon": 48.72999
+                },
+                {
+                    "arret": "Bienfaisance",
+                    "lat": -3.45414,
+                    "lon": 48.72914
+                },
+                {
+                    "arret": "Kermaria",
+                    "lat": -3.45711,
+                    "lon": 48.72832
+                },
+                {
+                    "arret": "Gare Clémenceau",
+                    "lat": -3.45959,
+                    "lon": 48.72837
+                },
+                {
+                    "arret": "Caerphilly",
+                    "lat": -3.46043,
+                    "lon": 48.72984
+                },
+                {
+                    "arret": "Pen Ar Ru",
+                    "lat": -3.46572,
+                    "lon": 48.72786
+                },
+                {
+                    "arret": "Beg Al Lann",
+                    "lat": -3.47244,
+                    "lon": 48.72499
+                },
+                {
+                    "arret": "Stade Bel Air",
+                    "lat": -3.47751,
+                    "lon": 48.72308
+                },
+                {
+                    "arret": "Rond-point Bel Air",
+                    "lat": -3.48176,
+                    "lon": 48.72274
+                },
+                {
+                    "arret": "Garenn C'hlas",
+                    "lat": -3.48145,
+                    "lon": 48.72496
+                },
+                {
+                    "arret": "Kérilis Adapei",
+                    "lat": -3.48171,
+                    "lon": 48.72917
+                },
+                {
+                    "arret": "Kérilis",
+                    "lat": -3.4818,
+                    "lon": 48.73124
+                }
+            ]
+        },
+        {
+            "ligne": "C",
+            "from": "Kérilis",
+            "to": "Alcatel",
+            "arrets": [
+                {
+                    "arret": "Kérilis ",
+                    "lat": -3.4818,
+                    "lon": 48.73124
+                },
+                {
+                    "arret": "Kérilis Adapei",
+                    "lat": -3.48181,
+                    "lon": 48.72915
+                },
+                {
+                    "arret": "Garenn C'hlas",
+                    "lat": -3.48156,
+                    "lon": 48.72496
+                },
+                {
+                    "arret": "Rond-point Bel Air",
+                    "lat": -3.482,
+                    "lon": 48.72221
+                },
+                {
+                    "arret": "Stade Bel Air",
+                    "lat": -3.47739,
+                    "lon": 48.72303
+                },
+                {
+                    "arret": "Beg Al Lann",
+                    "lat": -3.47233,
+                    "lon": 48.72495
+                },
+                {
+                    "arret": "Pen Ar Ru",
+                    "lat": -3.46576,
+                    "lon": 48.72775
+                },
+                {
+                    "arret": "Gare Clémenceau",
+                    "lat": -3.45978,
+                    "lon": 48.7283
+                },
+                {
+                    "arret": "Caerphilly",
+                    "lat": -3.46043,
+                    "lon": 48.72984
+                },
+                {
+                    "arret": "Kermaria",
+                    "lat": -3.45703,
+                    "lon": 48.72829
+                },
+                {
+                    "arret": "Bienfaisance",
+                    "lat": -3.45492,
+                    "lon": 48.72892
+                },
+                {
+                    "arret": "Sécurité Sociale",
+                    "lat": -3.44666,
+                    "lon": 48.72991
+                },
+                {
+                    "arret": "Rue des Cordiers",
+                    "lat": -3.4445,
+                    "lon": 48.73155
+                },
+                {
+                    "arret": "Intermarché St-Marc",
+                    "lat": -3.4391,
+                    "lon": 48.73432
+                },
+                {
+                    "arret": "Collège Coppens",
+                    "lat": -3.43371,
+                    "lon": 48.73442
+                },
+                {
+                    "arret": "Intermarché St-Marc",
+                    "lat": -3.43935,
+                    "lon": 48.73439
+                },
+                {
+                    "arret": "Rond-point St-Marc",
+                    "lat": -3.44406,
+                    "lon": 48.73497
+                },
+                {
+                    "arret": "Pouldiguy Picasso",
+                    "lat": -3.44975,
+                    "lon": 48.73995
+                },
+                {
+                    "arret": "Pouldiguy Bouille",
+                    "lat": -3.44825,
+                    "lon": 48.73881
+                },
+                {
+                    "arret": "Troguéry",
+                    "lat": -3.44511,
+                    "lon": 48.74083
+                },
+                {
+                    "arret": "Croix de St Ugeon",
+                    "lat": -3.45201,
+                    "lon": 48.74436
+                },
+                {
+                    "arret": "Côte du rest",
+                    "lat": -3.44864,
+                    "lon": 48.74811
+                },
+                {
+                    "arret": "Ecole du Rusquet",
+                    "lat": -3.44643,
+                    "lon": 48.75124
+                },
+                {
+                    "arret": "Rusquet Sud",
+                    "lat": -3.45216,
+                    "lon": 48.75165
+                },
+                {
+                    "arret": "Leclerc St-Pierre",
+                    "lat": -3.45613,
+                    "lon": 48.75272
+                },
+                {
+                    "arret": "IUT",
+                    "lat": -3.45409,
+                    "lon": 48.7577
+                },
+                {
+                    "arret": "Espace De Broglie",
+                    "lat": -3.45946,
+                    "lon": 48.75772
+                },
+                {
+                    "arret": "Alcatel",
+                    "lat": -3.46385,
+                    "lon": 48.75807
+                }
+            ]
+        },
+        {
+            "ligne": "Marché",
+            "from": "Rospez",
+            "to": "Quai d'Aiguillon",
+            "arrets": [
+                {
+                    "arret": "Rospez",
+                    "lat": -3.38516,
+                    "lon": 48.72926
+                },
+                {
+                    "arret": "Buhulien",
+                    "lat": -3.41337,
+                    "lon": 48.71759
+                },
+                {
+                    "arret": "Quai d'Aiguillon",
+                    "lat": -3.46043,
+                    "lon": 48.7314
+                },
+                {
+                    "arret": "Loguivy-lès-Lannion",
+                    "lat": -3.48298,
+                    "lon": 48.73527
+                },
+                {
+                    "arret": "Moulin de Kernéguez",
+                    "lat": -3.49553,
+                    "lon": 48.73086
+                },
+                {
+                    "arret": "Ploulec'h Bourg",
+                    "lat": -3.50402,
+                    "lon": 48.71876
+                },
+                {
+                    "arret": "Le Yaudet",
+                    "lat": -3.53604,
+                    "lon": 48.73156
+                },
+                {
+                    "arret": "Route du Yaudet",
+                    "lat": -3.48073,
+                    "lon": 48.73152
+                },
+                {
+                    "arret": "Pen Ar C'hra",
+                    "lat": -3.47497,
+                    "lon": 48.73145
+                },
+                {
+                    "arret": "Quai d'Aiguillon",
+                    "lat": -3.46043,
+                    "lon": 48.7314
+                }
+            ]
+        },
+        {
+            "ligne": "Marché",
+            "from": "Quai d'Aiguillon",
+            "to": "Rospez",
+            "arrets": [
+                {
+                    "arret": "Quai d'Aiguillon",
+                    "lat": -3.46043,
+                    "lon": 48.7314
+                },
+                {
+                    "arret": "Buhulien",
+                    "lat": -3.41337,
+                    "lon": 48.71759
+                },
+                {
+                    "arret": "Rospez",
+                    "lat": -3.38516,
+                    "lon": 48.72926
+                },
+                {
+                    "arret": "Quai d'Aiguillon",
+                    "lat": -3.46043,
+                    "lon": 48.7314
+                },
+                {
+                    "arret": "Loguivy-lès-Lannion",
+                    "lat": -3.48298,
+                    "lon": 48.73527
+                },
+                {
+                    "arret": "Moulin de Kernéguez",
+                    "lat": -3.49553,
+                    "lon": 48.73086
+                },
+                {
+                    "arret": "Ploulec'h",
+                    "lat": -3.50402,
+                    "lon": 48.71876
+                },
+                {
+                    "arret": "Le Yaudet",
+                    "lat": -3.53604,
+                    "lon": 48.73156
+                },
+                {
+                    "arret": "Route du Yaudet",
+                    "lat": -3.48073,
+                    "lon": 48.73152
+                },
+                {
+                    "arret": "Pen Ar C'hra",
+                    "lat": -3.47497,
+                    "lon": 48.73145
+                }
+            ]
+        }
+    ]
+}

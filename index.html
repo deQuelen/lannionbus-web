@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <META http-equiv="Cache-Control" content="no-cache"> 
+        <META http-equiv="Pragma" content="no-cache"> 
+        <META http-equiv="Expires" content="0"> 
+        <title>Lannion Bus</title>
+        
+        
+        
+        <link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css">
+        
+        <!-- Extra Codiqa features -->
+        <link rel="stylesheet" href="css/codiqa.ext.css">
+        
+        
+        
+    </head>
+    <body>
+        
+        <!-- Login -->
+        <div data-role="page" id="login">
+            <div class="header" data-theme="b" data-role="header" data-position="fixed">
+                <a href="#lignes" class="btn-lignes" data-role="button" data-inline="true" data-mini="true">Lignes de bus</a>
+                <a href="#arrets_proches" class="btn-arrets-proches" data-role="button" data-inline="true" data-mini="true">Arrêts proches</a>
+                <div style="text-align:center">
+                    <img style="width: 292px; height: 50px" src="img/logo.png">
+                </div>
+                
+            </div>
+            <div data-role="content">
+                <div id="map"></div>
+            </div>
+            <div data-role="panel" id="lignes" data-position="left" data-display="overlay" data-dismissible="true" data-theme="a">
+                
+                <div class="content-primary">
+                    <ul data-role="listview" data-theme="b">
+                        <li><a href="index.html">Ligne A</a></li>
+                        <li><a href="index.html">Ligne B</a></li>
+                        <li><a href="index.html">Ligne C</a></li>
+                        <li><a href="index.html">Ligne Marché</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="panel" id="arrets_proches" data-position="right" data-display="overlay" data-dismissible="true" data-theme="a">
+                
+                <div class="content-primary">
+                    <ul data-role="listview" data-theme="b">
+                        <li><a href="index.html">IUT (300m)</a></li>
+                        <li><a href="index.html">Alcatel (500m)</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="footer" class="ui-bar"> 
+                <a href="index.html" class="btn-localiser" data-role="button" data-icon="home">Me localiser</a>
+            </div>
+        </div>
+        
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.mobile-1.3.1.min.js"></script>
+        
+        <!-- Extra Codiqa features -->
+        <script src="js/codiqa.ext.js"></script>
+        <script src="js/ZeroClipboard.min.js"></script>
+        <script src="js/app.js"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    </body>
+</html>
