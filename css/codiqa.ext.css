@@ -2,6 +2,11 @@
 {
     background:#1BA1E2 !important;
 }
+@media screen and (max-width: 500px) {
+    .logo {
+        opacity:0;
+    }
+}
 .ui-content
 {
     height:100%;
@@ -34,6 +39,10 @@
     margin-right:auto !important;
     width:300px;
     display:block !important;
+}
+.map-labels
+{
+    background:white;
 }
 html, body {
     margin: 0;

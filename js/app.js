@@ -20,12 +20,19 @@ function load_arrets()
 }
 function placer_arrets()
 {
+    var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+    
     $.each(arrets.lignes, function(i, ligne) {
         $.each(ligne.arrets, function(i, arret) {
             var myLatlng = new google.maps.LatLng(arret.lon, arret.lat);
-            var marker = new google.maps.Marker({
+            
+            var marker = new MarkerWithLabel({
                 position: myLatlng,
-                map: map
+                draggable: true,
+                raiseOnDrag: true,
+                map: map,
+                labelContent: arret.arret,
+                labelClass: "map-labels" // the CSS class for the label
             });
         });
         
