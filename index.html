@@ -11,9 +11,9 @@
         <title>Lannion Bus</title>
         
         
-        
-        <link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css">
-        
+        <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
+        <link rel="stylesheet" href="css/jquery.mobile.theme-1.4.2.min.css">
         <!-- Extra Codiqa features -->
         <link rel="stylesheet" href="css/codiqa.ext.css">
         
@@ -22,9 +22,10 @@
     </head>
     <body>
         
-        <!-- Login -->
+        
+        <!-- first page -->
         <div data-role="page" id="login">
-            <div class="header" data-theme="b" data-role="header" data-position="fixed">
+            <div class="header" data-theme="a" data-role="header" data-position="fixed">
                 <a href="#lignes" class="btn-lignes" data-role="button" data-inline="true" data-mini="true">Lignes de bus</a>
                 <a href="#arrets_proches" class="btn-arrets-proches" data-role="button" data-inline="true" data-mini="true">Arrêts proches</a>
                 <div style="text-align:center">
@@ -35,33 +36,78 @@
             <div data-role="content">
                 <div id="map"></div>
             </div>
-            <div data-role="panel" id="lignes" data-position="left" data-display="overlay" data-dismissible="true" data-theme="a">
+            <div data-role="panel" id="lignes" data-position="left" data-display="overlay" data-dismissible="true" data-theme="b">
                 
                 <div class="content-primary">
-                    <ul data-role="listview" data-theme="b">
-                        <li><a href="index.html">Ligne A</a></li>
-                        <li><a href="index.html">Ligne B</a></li>
-                        <li><a href="index.html">Ligne C</a></li>
-                        <li><a href="index.html">Ligne Marché</a></li>
+                    <ul data-role="listview" data-theme="a">
+                        <li><a href="index.html" onclick="change_ligne('A')">Ligne A</a></li>
+                        <li><a href="index.html" onclick="change_ligne('B')">Ligne B</a></li>
+                        <li><a href="index.html" onclick="change_ligne('C')">Ligne C</a></li>
+                        <li><a href="index.html" onclick="change_ligne('Marché')">Ligne Marché</a></li>
                     </ul>
                 </div>
             </div>
-            <div data-role="panel" id="arrets_proches" data-position="right" data-display="overlay" data-dismissible="true" data-theme="a">
+            <div data-role="panel" id="arrets_proches" data-position="right" data-display="overlay" data-dismissible="true" data-theme="b">
                 
                 <div class="content-primary">
-                    <ul data-role="listview" data-theme="b">
-                        <li><a href="index.html">IUT (300m)</a></li>
-                        <li><a href="index.html">Alcatel (500m)</a></li>
+                    <ul data-role="listview" data-theme="a" data-count-theme="b" id="liste_arrets_proches">
+                        
                     </ul>
                 </div>
             </div>
-            <div data-role="footer" class="ui-bar"> 
-                <a href="index.html" class="btn-localiser" data-role="button" data-icon="home">Me localiser</a>
+            <div data-role="footer" class="ui-bar" data-theme="b"> 
+                <a href="index.html" class="btn-localiser" data-role="button" data-icon="home" onclick="me_localiser();">Me localiser</a>
             </div>
-        </div>
+        </div><!-- /first page -->
+        
+        <!-- second page -->
+        <div data-role="page" id="horaires">
+            <div class="header" data-theme="a" data-role="header" data-position="fixed">
+                <a href="#login" data-direction="reverse" data-transition="slide" data-back="true" class="ui-icon-back ui-btn ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Return</a>
+                <div style="text-align:center">
+                    <img class="logo" style="width: 292px; height: 50px" src="img/logo.png">
+                </div>
+                
+            </div>
+            <div data-role="content" class="content">
+                <ul data-role="listview" class="no-radius" data-inset="true" id="liste_horaires">
+                </ul>
+            </div>
+        </div><!-- /second page -->
+        
+        <!-- third page -->
+        <div data-role="page" id="sms">
+            <div class="header" data-theme="a" data-role="header" data-position="fixed">
+                <a href="#login" data-direction="reverse" data-transition="slide" data-back="true" class="ui-icon-back ui-btn ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Return</a>
+                <div style="text-align:center">
+                    <img class="logo" style="width: 292px; height: 50px" src="img/logo.png">
+                </div>
+                
+            </div>
+            <div data-role="content" class="content" style="text-align:center;">
+                <h3>Quand passe mon bus?</h3>
+                <h4>Un SMS vous prévient</h4>
+                <p>Veuillez entrer votre numéro de téléphone :</p>
+                <input type="tel" data-clear-btn="false" name="tel-1" id="tel-1" value="">
+                <p>Veuillez sélectionner un temps de rappel</p>
+                <div data-role="fieldcontain">
+                    <select name="select-choice-1" id="select-choice-1">
+                    </select>
+                </div>
+                <button class="ui-btn" onclick="receive_sms();">Envoyer</button>
+                <div data-role="popup" id="popupBasic">
+                    <p>Veuillez entrer un numéro de mobile valide<p>
+                </div>
+                <div data-role="popup" id="popupBasic2">
+                    <p>Vous serez prévenu de l'arrivée de votre bus<p>
+                </div>
+            </div>
+        </div><!-- /third page -->
+        
+        
         
         <script src="js/jquery-1.9.1.min.js"></script>
-        <script src="js/jquery.mobile-1.3.1.min.js"></script>
+        <script src="js/jquery.mobile-1.4.2.min.js"></script>
         
         <!-- Extra Codiqa features -->
         <script src="js/codiqa.ext.js"></script>

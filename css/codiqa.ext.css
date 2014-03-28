@@ -3,9 +3,38 @@
     background:#1BA1E2 !important;
 }
 @media screen and (max-width: 500px) {
-    .logo {
-        opacity:0;
+    
+    .btn-lignes {
+        width:24px !important;
+        height:24px !important;
+        background-image:url(../img/btn-lignes.png) !important;
+        color:rgb(0,255,255,255) !important;
+        background-color:transparent !important;
+        background-size:contain !important;
+        background-repeat:no-repeat;
+        padding:7px;
+        margin:10px !important;
+        border:none;
+        box-shadow:none;
+        font-size:0px !important;
+        
     }
+.btn-arrets-proches
+{
+    width:24px !important;
+    height:24px !important;
+    background-image:url(../img/btn-arrets-proches.png) !important;
+    color:rgb(0,255,255,255) !important;
+    background-color:transparent !important;
+    background-size:contain !important;
+    background-repeat:no-repeat;
+    padding:7px;
+    margin:10px !important;
+    border:none;
+    box-shadow:none;
+    font-size:0px !important;
+}
+
 }
 .ui-content
 {
@@ -64,4 +93,23 @@ html, body {
     bottom: 0;
     width: 100%;
     height: 40px /* this can be configurable, or omitted, as long as the above padding-bottom is at least as much as the height of the footer is */
+}
+.velo-icon:after {
+    background-image: url("../img/bicycle.png");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+    background-color:transparent !important;
+    border-radius:0 !important;
+    position:absolute;
+    right:80px;
+    float:right;
+    
+}
+#liste_horaires .ui-btn-icon-right
+{
+    padding-right:0 !important;
+}
+#liste_horaires .ui-btn::after
+{
+    opacity:0 !important;
 }
