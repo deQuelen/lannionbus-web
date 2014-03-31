@@ -7,14 +7,14 @@ var current_location = new google.maps.LatLng(48.737173, -3.458);
 var marker_image = new Array();
 var current_horaire_id ="";
 var current_arret="";
-marker_image['A'] = new google.maps.MarkerImage("../img/marker3.png");
-marker_image['B'] = new google.maps.MarkerImage("../img/marker1.png");
-marker_image['C'] = new google.maps.MarkerImage("../img/marker4.png");
-marker_image['Marché'] = new google.maps.MarkerImage("../img/marker5.png");
+marker_image['A'] = new google.maps.MarkerImage("img/marker3.png");
+marker_image['B'] = new google.maps.MarkerImage("img/marker1.png");
+marker_image['C'] = new google.maps.MarkerImage("img/marker4.png");
+marker_image['Marché'] = new google.maps.MarkerImage("img/marker5.png");
 
 
-var blue_marker = new google.maps.MarkerImage("../img/marker2.png");
-var pink_marker = new google.maps.MarkerImage("../img/marker6.png");
+var blue_marker = new google.maps.MarkerImage("img/marker2.png");
+var pink_marker = new google.maps.MarkerImage("img/marker6.png");
 
 
 
@@ -22,10 +22,10 @@ $(document).ready(function(){
     //me_localiser();
     init_map();
     load_arrets();
-    placer_arrets();
-    arrets_proches();
     load_horaires();
     load_vacances();
+    placer_arrets();
+    arrets_proches();
 });
 
 function load_arrets()
@@ -259,32 +259,41 @@ function affiche_horaires(arret)
                           
                       });
            });
-    tableau_horaires.sort(function(a,b){return a['horaire']-b['horaire']});
     $('#liste_horaires').empty();
-    $.each(tableau_horaires, function(i, item)
-           {
-               if(item['horaire'].toString().length==3)
+    if(tableau_horaires.length!=0)
+    {
+        tableau_horaires.sort(function(a,b){return a['horaire']-b['horaire']});
+        $('#liste_horaires').empty();
+        $.each(tableau_horaires, function(i, item)
                {
-                   var horaire_string = "0"+item['horaire'].toString().substring(0,1)+"h"+item['horaire'].toString().substring(1,3);
-               }
-               else
-               {
-                   var horaire_string = item['horaire'].toString().substring(0,2)+"h"+item['horaire'].toString().substring(2,4);
-               }
-               if(item['velo']==true)
-               {
-                   var velo_class='class="ui-btn-icon-right ui-icon-myicon velo-icon"';
-                   
-               }
-               $('#liste_horaires').append('<li><a href="#sms" onclick="sms_page();" data-index="'+item['id']+'" data-transition="slide">\
+                   if(item['horaire'].toString().length==3)
+                   {
+                       var horaire_string = "0"+item['horaire'].toString().substring(0,1)+"h"+item['horaire'].toString().substring(1,3);
+                   }
+                   else
+                   {
+                       var horaire_string = item['horaire'].toString().substring(0,2)+"h"+item['horaire'].toString().substring(2,4);
+                   }
+                   if(item['velo']==true)
+                   {
+                       var velo_class='class="ui-btn-icon-right ui-icon-myicon velo-icon"';
+                       
+                   }
+                   $('#liste_horaires').append('<li><a href="#sms" onclick="sms_page();" data-index="'+item['id']+'" data-transition="slide">\
 <img class="icon-menu" src="img/bus.png">\
 <h2>'+horaire_string+'</h2>\
 <p>Dirrection <b>'+item['to']+'</b></p></a>\
 <span class="ui-li-count">Ligne '+item['ligne']+'</span>\
 <span '+velo_class+'></span></a>\
 </li>').listview('refresh');
-               current_horaire_id=item['id'];
-           });
+                   current_horaire_id=item['id'];
+               });
+    }
+    else
+    {
+        $('#liste_horaires').empty();
+        $('#liste_horaires').append('<h3 style="text-align:center;">Aucun bus ne passe aujourd\'hui à cet arrêt</h3>').listview('refresh');
+    }
 }
 
 function check_vacances(){
@@ -381,3 +390,15 @@ function receive_sms()
         $('#popupBasic').popup("open");
     }
 }
+function return_horaires()
+{
+    window.location = "#horaires";
+    affiche_horaires(current_arret);
+}
+/*$('#horaires').bind('refresh',function(event){
+        alert("test");
+        current_horaire_id ="";
+    current_arret="";
+    window.location = "#login";
+    */
+
