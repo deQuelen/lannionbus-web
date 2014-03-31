@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="net.randomail.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Randomail</name>
+<widget id="bzh.lannion.bus" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Lannion Bus</name>
     <description>
-        Randomail is a free service to create disposable e-mail adresses
+		Lannion Bus est une application visant à aider les déplacements dans le trégor
     </description>
-    <author email="contact@randomail.net" href="http://randomail.net">
-        Randomail Team
+    <author email="baptiste@jamin.me" href="http://projects.emerginov.org/LannionBus/">
+        Baptiste JAMIN & Quentin de Quelen
     </author>
     <feature name="http://api.phonegap.com/1.0/device" />
     <preference name="permissions" value="none" />
