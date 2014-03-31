@@ -264,6 +264,7 @@ function affiche_horaires(arret)
     {
         tableau_horaires.sort(function(a,b){return a['horaire']-b['horaire']});
         $('#liste_horaires').empty();
+        $('#liste_horaires').append('<p style="text-align:center;">'+arret+'</p>').listview('refresh');
         $.each(tableau_horaires, function(i, item)
                {
                    if(item['horaire'].toString().length==3)
@@ -395,10 +396,6 @@ function return_horaires()
     window.location = "#horaires";
     affiche_horaires(current_arret);
 }
-/*$('#horaires').bind('refresh',function(event){
-        alert("test");
-        current_horaire_id ="";
-    current_arret="";
-    window.location = "#login";
+/*
     */
 
