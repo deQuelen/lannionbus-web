@@ -293,6 +293,7 @@ function affiche_horaires(arret)
     else
     {
         $('#liste_horaires').empty();
+        $('#liste_horaires').append('<p style="text-align:center;">'+arret+'</p>').listview('refresh');
         $('#liste_horaires').append('<h3 style="text-align:center;">Aucun bus ne passe aujourd\'hui à cet arrêt</h3>').listview('refresh');
     }
 }

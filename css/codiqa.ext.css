@@ -3,36 +3,36 @@
     background:#1BA1E2 !important;
 }
 
+
+.btn-lignes {
+    width:24px !important;
+    height:24px !important;
+    background-image:url(../img/btn-lignes.png) !important;
+    color:rgb(0,255,255,255) !important;
+    background-color:white !important;
+    background-size:90% 90% !important;
+    background-repeat:no-repeat;
+    padding:10px;
+    margin:10px !important;
+    font-size:0px !important;
+    border-radius:4px !important;
+    background-position:center; 
     
-    .btn-lignes {
-        width:24px !important;
-        height:24px !important;
-        background-image:url(../img/btn-lignes.png) !important;
-        color:rgb(0,255,255,255) !important;
-        background-color:transparent !important;
-        background-size:contain !important;
-        background-repeat:no-repeat;
-        padding:7px;
-        margin:10px !important;
-        border:none;
-        box-shadow:none;
-        font-size:0px !important;
-        
-    }
+}
 .btn-arrets-proches
 {
     width:24px !important;
     height:24px !important;
     background-image:url(../img/btn-arrets-proches.png) !important;
     color:rgb(0,255,255,255) !important;
-    background-color:transparent !important;
-    background-size:contain !important;
+    background-color:white !important;
+    background-size:90% 90% !important;
     background-repeat:no-repeat;
-    padding:7px;
+    padding:10px;
     margin:10px !important;
-    border:none;
-    box-shadow:none;
     font-size:0px !important;
+    border-radius:4px !important;
+    background-position:center; 
 }
 
 
