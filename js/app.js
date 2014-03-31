@@ -148,7 +148,7 @@ function success(position) {
 
 function error(msg) {
     // select the span with id status
-    alert("Votre systeme ne suporte actuellement pas la localisation");
+    alert("Actuellement, votre systeme ne supporte pas la localisation");
 }
 function arrets_proches()
 {
@@ -178,7 +178,8 @@ function arrets_proches()
     for(var i=0; i<=10; i++)
     {
         
-        $('#liste_arrets_proches').append('<li>' + tableau_arret[i].arret + ' <span class="ui-li-count ui-body-a">'+tableau_arret[i].distance.toFixed(2)+' km</span></li>').listview('refresh');
+        $('#liste_arrets_proches').append('<li><a href="#horaires" onclick="affiche_horaires(\''+tableau_arret[i].arret+'\');" data-transition="slide" >' + tableau_arret[i].arret + ' <span class="ui-li-count ui-body-a">'+tableau_arret[i].distance.toFixed(2)+' km</span></a></li>').listview('refresh');
+        
     }
 }
 function getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) 
@@ -283,7 +284,7 @@ function affiche_horaires(arret)
                    $('#liste_horaires').append('<li><a href="#sms" onclick="sms_page();" data-index="'+item['id']+'" data-transition="slide">\
 <img class="icon-menu" src="img/bus.png">\
 <h2>'+horaire_string+'</h2>\
-<p>Dirrection <b>'+item['to']+'</b></p></a>\
+<p>Direction <b>'+item['to']+'</b></p></a>\
 <span class="ui-li-count">Ligne '+item['ligne']+'</span>\
 <span '+velo_class+'></span></a>\
 </li>').listview('refresh');
@@ -397,6 +398,5 @@ function return_horaires()
     window.location = "#horaires";
     affiche_horaires(current_arret);
 }
-/*
-    */
+
 
