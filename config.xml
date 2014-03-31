@@ -5,7 +5,7 @@
 		Lannion Bus est une application visant à aider les déplacements dans le trégor
     </description>
     <author email="baptiste@jamin.me" href="http://projects.emerginov.org/LannionBus/">
-        Baptiste JAMIN & Quentin de Quelen
+        Wonkapp
     </author>
     <feature name="http://api.phonegap.com/1.0/device" />
     <preference name="permissions" value="none" />
