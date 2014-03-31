@@ -2,7 +2,7 @@
 {
     background:#1BA1E2 !important;
 }
-@media screen and (max-width: 500px) {
+
     
     .btn-lignes {
         width:24px !important;
@@ -35,7 +35,7 @@
     font-size:0px !important;
 }
 
-}
+
 .ui-content
 {
     height:100%;
