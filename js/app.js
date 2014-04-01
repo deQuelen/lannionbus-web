@@ -227,7 +227,7 @@ function affiche_horaires(arret)
                                          var weekday=new Array(7);
                                          weekday[0]=horaires_item.sunday ;
                                          weekday[1]=horaires_item.monday;
-                                         weekday[2]=horaires_item.Tuesday ;
+                                         weekday[2]=horaires_item.tuesday ;
                                          weekday[3]=horaires_item.wednesday ;
                                          weekday[4]=horaires_item.thursday ;
                                          weekday[5]=horaires_item.friday ;
