@@ -12,6 +12,7 @@ marker_image['B'] = new google.maps.MarkerImage("img/marker1.png");
 marker_image['C'] = new google.maps.MarkerImage("img/marker4.png");
 marker_image['Marché'] = new google.maps.MarkerImage("img/marker5.png");
 
+var overlays = new Array();
 
 var blue_marker = new google.maps.MarkerImage("img/marker2.png");
 var pink_marker = new google.maps.MarkerImage("img/marker6.png");
@@ -64,9 +65,21 @@ function load_vacances()
 function change_ligne(nom_ligne)
 {
     current_ligne=nom_ligne;
-    init_map();
+	clear_map();
     placer_arrets();
     
+}
+function clear_map()
+{
+  while(overlays[0]){
+   overlays.pop().setMap(null);
+  }
+   var marker = new google.maps.Marker({
+        position: current_location,
+        icon: blue_marker,
+        map: map
+    });
+	overlays.push(marker);
 }
 function placer_arrets()
 {
@@ -94,6 +107,7 @@ function placer_arrets()
                         labelClass: "map-labels", // the CSS class for the label
                         icon: marker_image[current_ligne]
                     });
+					overlays.push(marker);
                     google.maps.event.addListener(marker, 'click', function() {
                         $.mobile.changePage( "#horaires", { transition: "slide", direction: "left" });
                         
@@ -122,6 +136,7 @@ function init_map()
         icon: blue_marker,
         map: map
     });
+	overlays.push(marker);
 }
 function me_localiser()
 {
@@ -134,8 +149,9 @@ function me_localiser()
 
 function success(position) {
     // variable to store the coordinates
+	init_map();
+	
     current_location = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
-    init_map();
     load_arrets();
     placer_arrets();
     var marker = new google.maps.MarkerWithLabel({
@@ -143,6 +159,7 @@ function success(position) {
         icon: blue_marker,
         map: map
     });
+	overlays.push(marker);
     arrets_proches();
 }
 
@@ -208,12 +225,15 @@ function affiche_horaires(arret)
     current_arret=arret;
     var tableau_horaires = new Array();
     var show_horaire = false;
+	
     $.each(horaires.horaires, function(i, horaires_item) 
            {
                $.each(horaires_item.tournees, function(i, tournees) 
                       {
+			
                           $.each(tournees.horaires, function(i, horaire) 
-                                 {  
+                                 { 
+					 
                                      if(horaire.arret==arret)
                                      {
                                          var tableau_horaire = new Array();
@@ -234,11 +254,12 @@ function affiche_horaires(arret)
                                          weekday[6]=horaires_item.saturday ;
                                          
                                          var n = d.getDay();
-                                         
+                                     
                                          if(weekday[n]==1)
                                          {
                                              show_horaire = true;
                                          }
+							
                                          //Si la ligne ne passe que pendant les vacances
                                          if(horaires_item.type=="vacances" && check_vacances() && show_horaire && !isFerie())
                                          {
@@ -398,5 +419,3 @@ function return_horaires()
     window.location = "#horaires";
     affiche_horaires(current_arret);
 }
-
-
